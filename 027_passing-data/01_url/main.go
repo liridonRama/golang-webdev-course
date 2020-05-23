@@ -12,7 +12,7 @@ func main() {
 }
 
 func foo(w http.ResponseWriter, req *http.Request) {
-	v := req.FormValue("q")
+	v := req.FormValue("p")
 	fmt.Fprintln(w, "Do my search: "+v)
 }
 

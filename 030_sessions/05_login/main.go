@@ -5,6 +5,7 @@ import (
 	"golang.org/x/crypto/bcrypt"
 	"html/template"
 	"net/http"
+	"strings"
 )
 
 type user struct {
