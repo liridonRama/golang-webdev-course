@@ -1,12 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>INDEX</title>
-</head>
-<body>
+  </head>
+  <body>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+      <input name="file" type="file" />
+      <input type="submit" value="submit" />
+    </form>
 
-Hello from index
-
-</body>
+    <h1>Cookie Values:</h1>
+    {{range .}}
+    <img src="images/{{.}}" alt="" />
+    {{ end }}
+  </body>
 </html>
